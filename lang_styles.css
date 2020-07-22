@@ -74,13 +74,14 @@ a:hover {
 }
 
 .lang-img {
-    margin-left: 6%;
-    margin-top: 3%;
+    margin-left: 10%;
+    margin-top: 1%;
     padding-bottom: 2%;
 }
 
 .cpp-img {
     width: 60%;
+    
 }
 
 .languages {
@@ -328,6 +329,7 @@ color: white;
     border: 1px solid gray;
     padding-inline-start: 0;
     list-style: none;
+    box-shadow: 0.5px 0.5px 3px 3px rgb(211, 211, 211);
 }
 
 /* Breadcrumb */
