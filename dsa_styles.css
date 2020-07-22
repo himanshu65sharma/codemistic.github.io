@@ -5,15 +5,16 @@ body {
 }
 
 hr {
-    margin: 50px auto;
-    border-color: rgb(138, 135, 135);
-    width: 50%;
+    margin: 10px auto;
+    
+    width: 100%;
 }
 
 h1, h2, h3, h5, h6 {
-    margin: 50px auto;
+    margin: 15px auto;
     line-height: 1.5;
     text-align: left;
+    font-family:  'Varela Round', sans-serif;
 }
 
 p {
@@ -33,7 +34,7 @@ strong {
     box-shadow: 1px 1px 3px 2px gray;
     border-radius: 5px;
     position: relative;
-    top: 70px;
+    top: 5px;
 }
 
 .sticky {
@@ -315,7 +316,7 @@ pre {
     margin: 0;
     padding: 0;
     position: absolute;
-    
+   
     width: 98%;
 }
 
@@ -329,7 +330,7 @@ pre {
 
 .bdcrumb {
     margin-left: 30%;
-    padding-top: 30px;
+    /* padding-top: 0px; */
 }
 
 /* Media queries */
@@ -349,3 +350,21 @@ pre {
         font-size: 1.8rem;
     }
 }
+/* @media (max-width: 575px)
+.bdcrumb {
+    padding: 16px;
+    background-color: #fff;
+    margin-top: 0;
+    margin-left: -24px;
+    margin-right: -24px;
+    border-bottom: 1px solid #d3dce6;
+    position: sticky;
+    top: 60px;
+    z-index: 98;
+}
+*/
+/* .breadcrumb-items:not(:last-child):after {
+    content: '>';
+    padding: 0 8px;
+    color: rgba(37,38,94,0.7);
+}  */
