@@ -298,7 +298,7 @@ pre {
 .submenu a {
     display: block;
     text-decoration: none;
-    color: steelblue;
+    /* color: steelblue; */
     padding: 12px;
     padding-left: 42px;
     -webkit-transition: all 0.25s ease;
@@ -307,8 +307,13 @@ pre {
 }
 
 .submenu a:hover {
-    background: #47b1ee;
+    background: steelblue;
     color: #FFF
+}
+
+.opened{
+background: steelblue; 
+color: white;
 }
 
 .lbar {
