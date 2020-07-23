@@ -387,7 +387,9 @@ color: white;
     padding-left: .15rem;
     padding-right: .15rem;
 }
-
+img{
+    width: 100%;
+}
 .wrapper img{
     max-width: 100%;
 }
