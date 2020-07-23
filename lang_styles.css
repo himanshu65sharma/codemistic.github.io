@@ -80,7 +80,7 @@ a:hover {
 }
 
 .cpp-img {
-    width: 60%;
+    width: 100%;
     
 }
 
@@ -315,7 +315,6 @@ pre {
 background: steelblue; 
 color: white;
 }
-
 .lbar {
     margin: 0;
     padding: 0;
@@ -357,6 +356,9 @@ color: white;
     h1, h2 {
         font-size: 1.8rem;
     }
+    .cpp-img{
+        display: none;
+    }
 }
 /* @media (max-width: 575px)
 .bdcrumb {
@@ -387,10 +389,10 @@ color: white;
     padding-left: .15rem;
     padding-right: .15rem;
 }
-.imghome{
+/* .imghome{
     width: 100%;
     text-align: left;
-}
+} */
 .wrapper img{
     max-width: 100%;
 }
@@ -409,6 +411,25 @@ color: white;
 .wrapperhome p , .wrapperhome ul{
     padding-left: 30px;
     color: rgb(126, 120, 120);
+}
+
+/* TABLE */
+
+table{
+    width: 100%
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: steelblue;
+  color: white;
+}
+tr:nth-child(odd) {
+  background-color: rgb(50, 123, 168);
+  color: white;
 }
 /* .wrapperhome h1,h2,h3,h4,h5,h6{
      font-weight: bold; 
