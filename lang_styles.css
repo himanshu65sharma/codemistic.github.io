@@ -387,7 +387,10 @@ color: white;
     padding-left: .15rem;
     padding-right: .15rem;
 }
-
+.imghome{
+    width: 100%;
+    text-align: left;
+}
 .wrapper img{
     max-width: 100%;
 }
