@@ -333,14 +333,14 @@
 
             <h4>How variables work in C?</h4>
             <p>In C language whe we declare a vairable and assign value to it then <b>some space is created </b>in memory by the given name and the given values is stored in it.Suppose we write the statement <b>int a=42;</b>, then the following will be the memory diagram</p><br> 
-            <img src="pythonphoto\Capture39.jpg" height="190"><br>
+            <img src="pythonphoto\Capture39.JPG" height="190"><br>
         
             <p> Now if we declare another variable , with the same value ,then again the same process will take place.<br><br>Suppose we write,<b>int b=42;</b></p>
                 
             
-            <img src="pythonphoto\Capture40.jpg" height="190"><br>
+            <img src="pythonphoto\Capture40.JPG" height="190"><br>
             <p>Finally we assign a new value to an existing variables, then it's previous value gets <b>overwritten<br><br>Suppose we write,<b>a=43;</b></b></p><br>
-            <img src="pythonphoto\Capture41.jpg" height="190"><br>
+            <img src="pythonphoto\Capture41.JPG" height="190"><br>
 
             <h4>How variables work in Python?</h4>
             <p>In python when we assign value to a variable , then things are different than C.Suppose we write <b>a=42</b> in python , then python will create 2 things:<br>
@@ -349,26 +349,26 @@
                     <li><b>A reference called a which will point to this object</b></li>
                 </ul>
             </p><br>
-            <img src="pythonphoto\Capture42.jpg" height="290"><br>
+            <img src="pythonphoto\Capture42.JPG" height="290"><br>
             <p>Now if we create another variable called b and assign it the same value, then Python will do the following :<br>
                 <ul>
                     <li><b>Create a new reference by the name b</b></li>
                     <li><b>Assign the address of the previously created object to the reference b because the value is same</b></li>
                     <li><b>So now both a and b are pointing to the same object</b></li>
                 </ul>
-            <img src="pythonphoto\Capture43.jpg"/><br>
+            <img src="pythonphoto\Capture43.JPG"/><br>
             <p>Finally if we assign a new value to the variable a,then like C,python will not overwrite the value. Rather it will do the following:<br><ul>
                 <li><b>Create a new object initialized with the new value</b></li>
                 <li><b>Assign the address of the newly created object to the reference a</b></li>
                 <li><b>However the reference b is still pointing to the same object</b></li>
                 
             </ul>
-            <img src="pythonphoto\Capture44.jpg"/><br>
+            <img src="pythonphoto\Capture44.JPG"/><br>
             <p>This behaviour of object in python is called "immutability". In other words when we cannot change the value of an object , we say it is immutable , otherwise we say it is mutable. Objects of biult-in type like(<b>int, float, str, bool, complex,tuple</b>) are immutabel. Objects of built -in type like(<b>list, set, dict</b>) are mutable</p><br>
 
             <h4>String are also immutable</h4>
             <p>String objects in python are also immutable.That is , once we have created a String object, then we cannot overwrite it's value.Although we can change the value of the String refernce by assigning it new String.</p><br>
-            <img src="pythonphoto\Capture45.jpg" ><br>
+            <img src="pythonphoto\Capture45.JPG" ><br>
 
             <h4>Summary</h4>
             <ul>
