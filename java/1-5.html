@@ -72,6 +72,8 @@
 
 
     
+    
+
     <!-- Accordion -->
 
     <section class="lbar">
@@ -87,7 +89,7 @@
                         <a href="1-1.html  " class="closed" >Java Hello World</a>
                     </li>
                     <li>
-                       <a href="1-2.html " class="opened">Java JVM, JRE and JDK</a>
+                       <a href="1-2.html " class="closed">Java JVM, JRE and JDK</a>
                    </li>
                    <li>
                        <a href="1-3.html " class="closed">Java Data Types</a>
@@ -96,7 +98,7 @@
                        <a href="1-4.html " class="closed">Java Operators</a>
                    </li>
                    <li>
-                       <a href="1-5.html " class="closed">Java Input and Output</a>
+                       <a href="1-5.html " class="opened">Java Input and Output</a>
                    </li>
                    <li>
                        <a href="1-6.html " class="closed">Java Expressions & Blocks</a>
@@ -308,7 +310,6 @@
             </li>
         </ul>
     </section>
-
     
 
     <br>
@@ -324,189 +325,261 @@
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
                 <li class="breadcrumb-item"><a  href="../java.html#languages">Java Index</a></li>
-                <li class="breadcrumb-item active" aria-current="page">JDK, JRE and JVM</li>
+                <li class="breadcrumb-item active" aria-current="page">Java Input and Output</li>
             </ul>
         </nav>
 
         <!-- breadcrumb ending -->
-    <!--    para-->
+    <!-- HEADING -->
+    <div class="wrapper">
     
-    
-    
-    
-<div class="wrapper">
         
-   <h3> <strong>Java JDK, JRE and JVM</strong></h3>
+            <h3>Java Input And Output</h3>
         
-        <p><strong>In this tutorial, you will learn about JDK, JRE, and JVM. You will also learn the key differences between them.
-            </strong></p>
-
-        <hr>
-        <br>
-       <h5><strong>What is JVM? </strong></h5>
-        <p><strong>JVM</strong> (Java Virtual Machine)is a virtual machine that enables a computer to run Java programs as well as programs written in other languages that are also compiled to Java bytecode.</p><br>
-        <!--        <p>When you run the Java program, Java compiler first compiles your Java code to bytecode. Then, the JVM translates bytecode into native machine code (set of instructions that a computer's CPU executes directly).</p>-->
-    
-            <h6 class="subheading"><strong>Here is how JVM works:</strong></h6>
-        
-        <p>First, Java code is complied into bytecode. This bytecode gets interpreted on different machines Between host system and Java source, Bytecode is an intermediary language.JVM is responsible for allocating memory space.</p>
-        <br>
-        <p> The JVM is detailed by a specification that formally describes what is required in a JVM implementation. Having a specification ensures interoperability of Java programs across different implementations so that program authors using the Java Development
-            Kit (JDK) need not worry about idiosyncrasies of the underlying hardware platform.
-        </p><br>
-        <center>
-            <img alt="How does Java program work?" src="javaphoto/how-java-program-runs.jpg" title="Working of Java Program" width="">
-            <figcaption><strong>Working of Java Program</strong></figcaption>
+        <p>In this tutorial, you will learn how to take Input from the user And give Output in Java. Java brings various Streams with its I/O package that helps the user to perform all the input-output operations. These streams support all the types of objects, data-types, characters, files etc to fully execute the I/O operations.
+        </p>
+	<hr><br>
+	<center>
+            <img alt="Java Standard I/O" src="javaphoto/StandardI_Ostreams.png" title="Java Standard Input and Output" width="854" height="300">
+            <figcaption><strong>Java Standard Input and Output</strong></figcaption>
             <br>
         </center>
-        <p>So, now we understood that the primary function of JVM is to execute the byte code produced by compiler. <strong>Each operating system has different JVM, however the output they produce after execution of byte code is same across all operating systems.</strong>            Which means that the byte code generated on Windows can be run on Mac OS and vice versa. That is why we call java as platform independent language. </p>
-
-        <!--        <p>Java is a platform-independent language. It's because when you write Java code, it's ultimately written for JVM but not your physical machine (computer). Since JVM executes the Java bytecode which is platform-independent, Java is platform-independent.</p>-->
-
-
-        <hr>
-        <br>
-        <h5><strong>What is JRE? </strong> </h5>
-        <p><strong>JRE</strong> (Java Runtime Environment) is a software package that provides Java class libraries, Java Virtual Machine (JVM), and other components that are required to run Java applications.</p>
-        <br>
-        <p>Java Run-time Environment (JRE) is the part of the Java Development Kit (JDK). It is a freely available software distribution which has Java Class Library, specific tools, and a stand-alone JVM. It is the most common environment available on devices
-            to run java programs. The source Java code gets compiled and converted to Java bytecode. If you wish to run this bytecode on any platform, you require JRE. The JRE loads classes, verify access to memory, and retrieves the system resources.
-            JRE acts as a layer on the top of the operating system.</p>
-
-
-
-        <!--
-        <p>It is: </p><br>
-        <ul>
-         <li>A <strong> specification </strong> where working of Java Virtual Machine is specified. But implementation provider is independent to choose the algorithm. Its implementation has been provided by Sun and other companies.</li>
-         <li>An <strong>implementation </strong> is a computer program that meets the requirements of the JVM specification. </li>
-         <li><strong>Runtime</strong> Instance Whenever you write java command on the command prompt to run the java class, an instance of JVM is created.</li>
+	<h5><strong>System.in </strong> </h5>
+	
+	<p><strong>System.in</strong> is an InputStream which is typically connected to keyboard input of console programs. <b>System.in</b> is not used as often since data is commonly passed to a command line Java application via command line arguments, or configuration files. This is a separate input mechanism from Java IO.</p>
+	<ul>
+                <li><strong>Scanner Class </strong><br>
+		<p>The Scanner class is used to get user input, and it is found in the java.util package.</p>
+		<br>
+		<p>To use the Scanner class, create an object of the class and use any of the available methods given below.</p>
+		</li>
+                <li><strong>Input Types</strong><br>
+		<p>To read values of different datatypes from the console, look at the table below:</p>
+		</li>
         </ul>
--->
-
-        <center>
-            <img alt="JRE contains JVM and other Java class libraries." src="javaphoto/java-realtime-enviornment_.jpg" title="Java Runtime Environment" width="" class="paraimg">
-            <figcaption style="text-align: center;"><strong>Java Runtime Environment</strong></figcaption>
-            <br>
-        </center>
-
-
-        <p> If you need to run Java programs, but not develop them, JRE is what you need. You can download JRE from <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Java SE Runtime Environment 8 Downloads</a> page.</p>
-
-
-
-
-
-        <hr>
-        <br>
-
-        <h5 ><strong>What is JDK? </strong> </h5>
-        <p><strong>JDK </strong>(Java Development Kit) is a software development kit required to develop and execute(run) the Java program. When you download JDK, JRE is also downloaded with it.<br>
-            <p>
-                The Java Development Kit (JDK) is a software development environment used for developing Java applications and applets. It includes the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation
-                generator (Javadoc) and other tools needed in Java development
-            </p>
-            <h6  class="subheading"><strong> JDK is a kit(or package) which includes two things:</strong></h6>
-            <p>Development Tools(to provide an environment to develop your java programs)<br> JRE (to execute your java program).</p>
-
-            <center>
-                <img alt="JDK contains JRE and other tools to develop Java applications." src="javaphoto/java-development-kit.jpg" title="Java development kit" width="">
-                <figcaption><strong>Java Development Kit</strong></figcaption>
-                <br>
-            </center>
-            <p>In addition to JRE, JDK also contains a number of development tools (compilers, JavaDoc, Java Debugger, etc).</p>
+	<table border=2>
+	<tr><th>Method</th><th>Description</th></tr>
+	<tr><td>nextBoolean()</td><td>Reads a boolean value from the user</td></tr>
+	<tr><td>nextByte()</td><td>Reads a byte value from the user</td></tr>
+	<tr><td>nextDouble()</td><td>Reads a double value from the user</td></tr>
+	<tr><td>nextFloat()</td><td>Reads a float value from the user</td></tr>
+	<tr><td>nextInt()</td><td>Reads a int value from the user</td></tr>
+	<tr><td>nextLine()</td><td>Reads a String value from the user</td></tr>
+	<tr><td>nextLong()</td><td>Reads a long value from the user</td></tr>
+	<tr><td>nextShort()</td><td>Reads a short value from the user</td></tr>
+	</table>
+	<p>In the example below, we use different methods to read data of various types:</p>
+<pre><code>
+// Scanning Input from Console                
+import java.util.Scanner;class MyClass
+{
+   public static void main(String[] args)
+	{
+	  Scanner myObj = new Scanner(System.in);
+	  System.out.println("Enter name, age and salary:");
+	  String name = myObj.nextLine();
+	  int age = myObj.nextInt();
+	  double salary = myObj.nextDouble();
+	  System.out.println("Name: " + name);
+	  System.out.println("Age: " + age);
+	  System.out.println("Salary: " + salary);
+	}
+}</code></pre>
+	<h5><strong>System.out </strong> </h5>
+	<p> <strong>System.out</strong> is the standard output stream that is used to produce the result of a program on an output device like the computer screen. 
+	<br>Here is a list of the various print functions that we use to output statements:
+	</p>
+	<ul>
+                <li><strong>print()</strong>
+		<p>This method in Java is used to display a text on the console. This text is passed as the parameter to this method in the form of String. This method prints the text on the console and the cursor remains at the end of the text at the console. The next printing takes place from just here.</p>
+		
+		<h5>Syntax : </h5>
+		<p>System.out.print(parameter);</p>
+		<h5>Example :</h5>
+		<pre><code>
+import java.io.*;
+class Demo_print
+{
+	public static void main(String[] args)
+  {
+	// using print()
+	// all are printed in the
+	// same line
+	System.out.print("Keep ");
+	System.out.print("Using ");
+	System.out.print("CodeMistic !");
+  }
+}</code></pre>
+		<p>When you run the program, the output will be:</p>
+		<pre><samp>Keep Using CodeMistic !</samp></pre>
+		</li>
+                <li><strong>println()</strong>
+		<p>This method in Java is also used to display a text on the console. It prints the text on the console and the cursor moves to the start of the next line at the console. The next printing takes place from the next line.</p>
+		
+		<h5>Syntax : </h5>
+		<p>System.out.println(parameter);</p>
+		<h5>Example :</h5>
+		<pre><code>
+import java.io.*;
+class Demo_print
+{
+  public static void main(String[] args)
+	{
+	  // using println()
+	  // all are printed in the
+	  // different line
+	    System.out.println("Keep Using CodeMistic!");
+		System.out.println("Keep Using CodeMistic!");
+		System.out.println("Keep Using CodeMistic!");
+	}
+}</code></pre>
+		<p>When you run the program, the output will be:</p>
+		<pre><samp>Keep Using CodeMistic!<br>Keep Using CodeMistic!<br>Keep Using CodeMistic!</samp></pre>
+		</li>
+		<li><strong>printf()</strong><br>
+		<p>This is the easiest of all methods as this is similar to printf in C. Note that System.out.print() and System.out.println() take a single argument, but printf() may take multiple arguments. This is used to format the output in Java.</p>
+		
+		<h5>Syntax : </h5>
+		<p> System.out.printf(format, arguments);</p>
+		<h5>Example :</h5>
+		<pre><code>
+import java.io.*;
+class JavaFormatter1 
+ {
+   public static void main(String args[])
+   {
+ 	int x = 100;
+ 	System.out.printf("Printing simple"+" integer: x =%d\n",x);
+ 	// this will print it upto
+ 	// 2 decimal places
+ 	System.out.printf("Formatted with precision: PI =%.2f\n",Math.PI);
+	float n = 5.2f;
+ 	// automatically appends zero
+ 	// to the rightmost part of decimal
+ 	System.out.printf("Formatted to specific width: n= %.4f\n",n);
+ 	n = 2324435.3f;
+ 	// here number is formatted from
+ 	// right margin and occupies a
+ 	// width of 20 characters
+ 	System.out.printf("Formatted to right margin: n = %20.4f\n",n);
+   }
+}</code></pre>
+		<p>When you run the program, the output will be:</p>
+		<pre><samp>Printing simple integer: x = 100<br>Formatted with precison: PI = 3.14<br>Formatted to specific width: n = 5.2000<br>Formatted to right margin: n =         2324435.2500</samp></pre>
+		</li>
+        </ul>
+	<h5><strong>System.err </strong> </h5>
+	<p><strong>System.err</strong> This is the standard error stream that is used to output all the error data that a program might throw, on a computer screen or any standard output device.<br>This stream also uses all the 3 above-mentioned functions to output the error data:
+	</p>
+	<ul>
+	<li>print()</li>
+	<li>println()</li>
+	<li>printf()</li>
+	</ul>
+	<pre><code>import java.io.*;
+public class SimpleIO
+{
+  public static void main(String args[])throws IOException
+  {
+ 	// InputStreamReader class to read input
+	InputStreamReader inp = null;
+ 	// Storing the input in inp
+ 	inp = new InputStreamReader(System.in);
+ 	System.out.println("Enter characters, "+ " and '0' to quit.");
+ 	char c;
+ 	do
+ 	{
+ 	  c = (char)inp.read();
+ 	  System.out.println(c);
+ 	} while (c != '0');
+   }
+}</code></pre>
         
-            <p>If you want to develop Java applications, <a href="http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html">download JDK</a> .</p>
-
-
-            <hr>
-            <br>
-            <h5><strong>Relationship between JVM, JRE, and JDK. </strong> </h5>
-
-            <p><strong>JDK -</strong> Java Development Kit (in short JDK) is Kit which provides the environment to develop and execute(run) the Java program. JDK is a kit(or package) which includes two things:</p>
-            <ul>
-                <li> Development Tools(to provide an environment to develop your java programs)</li>
-                <li>JRE (to execute your java program).</li>
-            </ul>
-            <p><strong>JRE -</strong> Java Runtime Environment (to say JRE) is an installation package which provides environment to only run(not develop) the java program(or application)onto your machine. JRE is only used by them who only wants to run the
-                Java Programs i.e. end users of your system.<br>
-                <strong>JVM -</strong> Java Virtual machine(JVM) is a very important part of both JDK and JRE because it is contained or inbuilt in both. Whatever Java program you run using JRE or JDK goes into JVM and JVM is responsible for executing
-                the java program line by line hence it is also known as interpreter.
-            </p>
-            <center>
-                <img alt="JRE contains JVM and class libraries and JDK contains JRE, compilers, debuggers, and JavaDoc" src="javaphoto/jdk-jre-jvm.jpg" title="Relationship between JVM, JRE, and JDK" width="">
-                <figcaption><strong>Relationship between JVM, JRE, and JDK</strong></figcaption>
-                <br>
-    </center>
-
-</div>
-           
-         
-           
-             
-                 
-           
-<!--           wrapper end-->
-            <div class="but text-right">
-                <button class="btn btn-primary pull-right"><a href="1-3.html">Next Topic&nbsp;<i
-                            class="fas fa-arrow-right "></i></a></button>
-            </div><br>
-        </section>
-        <br>
-        <div class="pre-footer">
-            <h5 style="text-align: center;">More Topics Uploading soon...</h5>
-            <hr>
-            <h7>Do you want to contribute by preparing content for us :</h7>
+        <p>When you run the program, the output will be:</p>
+	<p>Input</p>
+        <pre><samp>CODEMISTIC0</samp></pre>
+	<p>Output</p>
+        <pre><samp>Enter characters, and '0' to quit.<br>C<br>O<br>D<br>E<br>M<br>I<br>S<br>T<br>I<br>C<br>0</samp></pre>
         </div>
-          
-           <div class="but text-center">
-                <button class="btn btn-primary "><a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link "
-                        target="_blank ">Contribute</a></button>
-            </div>
-    
-       
-<!--       footer-->
-        <footer class="container-fluid ">
-            <h4 class="foot foot-header">Made with <i style="color:red " class="fa fa-heart "></i> By - Team CodeMistic</h4>
-            <p class="foot">&#169 Copyright : Team CodeMistic</p>
-            <div class="footer-links ">
-                <h7>Connect With Us</h7><br><br>
-                <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
-                        style="color:#3b5998; "></i></a>
-                <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
-                        style="color:#e95950; "></i></a>
-                <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
-                        style="color:#8accf5; "></i></a>
-                <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
-                        class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
-                <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
-                        style="color:#65adda; "></i></a>
-    
-                <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
-                        class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
-            </div>
-        </footer>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        <!-- CSS Scripts -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
-            crossorigin="anonymous "></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
-            crossorigin="anonymous "></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
-            crossorigin="anonymous "></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-        <script src='../side.js'></script>
-    </body>
-    </html>
+
+
+    </div>
+    <div class="but text-right">
+        <button class="btn btn-primary pull-right"><a href="1-6.html">Next Topic&nbsp;<i
+                    class="fas fa-arrow-right "></i></a></button>
+    </div><br>
+</section>
+<br>
+<div class="pre-footer">
+    <h5 style="text-align: center;">More Topics Uploading soon...</h5>
+    <hr>
+    <h7>Do you want to contribute by preparing content for us :</h7>
+</div>
+   <div class="but text-center">
+        <button class="btn btn-primary "><a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc2O28YJpxQc6kh2tKpI_Lf5MwfwGXVnhMs0g5EEXobJ4Beeg/viewform?usp=sf_link "
+                target="_blank ">Contribute</a></button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="container-fluid ">
+    <h4 class="foot foot-header">Made with <i style="color:red " class="fa fa-heart "></i> By - Team CodeMistic</h4>
+    <p class="foot">&#169 Copyright : Team CodeMistic</p>
+    <div class="footer-links ">
+        <h7>Connect With Us</h7><br><br>
+        <a href="https://www.facebook.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-facebook "
+                style="color:#3b5998; "></i></a>
+        <a href="https://www.instagram.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-instagram "
+                style="color:#e95950; "></i></a>
+        <a href="https://www.twitter.com/codemistic " target="_blank "><i class="icons fa-2x fab fa-twitter "
+                style="color:#8accf5; "></i></a>
+        <a href="https://www.linkedin.com/company/codemistic " target="_blank "><i
+                class="icons fa-2x fab fa-linkedin " style="color:#88b3ee; "></i></a>
+        <a href="https://t.me/codemistic " target="_blank "><i class="icons fa-2x fab fa-telegram "
+                style="color:#65adda; "></i></a>
+
+        <a href="https://www.youtube.com/channel/UCS1Iv_kkgQGDwoXtvrlwlag " target="_blank "><i
+                class="icons fa-2x fab fa-youtube " style="color:red; "></i></a>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<!-- CSS Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+    crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+    crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
+    crossorigin="anonymous "></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='../side.js'></script>
+</body>
+</html>

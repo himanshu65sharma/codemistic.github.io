@@ -87,13 +87,13 @@
                         <a href="1-1.html  " class="closed" >Java Hello World</a>
                     </li>
                     <li>
-                       <a href="1-2.html " class="opened">Java JVM, JRE and JDK</a>
+                       <a href="1-2.html " class="closed">Java JVM, JRE and JDK</a>
                    </li>
                    <li>
                        <a href="1-3.html " class="closed">Java Data Types</a>
                    </li>
                    <li>
-                       <a href="1-4.html " class="closed">Java Operators</a>
+                       <a href="1-4.html " class="opened">Java Operators</a>
                    </li>
                    <li>
                        <a href="1-5.html " class="closed">Java Input and Output</a>
@@ -324,131 +324,389 @@
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
                 <li class="breadcrumb-item"><a  href="../java.html#languages">Java Index</a></li>
-                <li class="breadcrumb-item active" aria-current="page">JDK, JRE and JVM</li>
+                <li class="breadcrumb-item active" aria-current="page">Java Operators</li>
             </ul>
         </nav>
 
         <!-- breadcrumb ending -->
     <!--    para-->
-    
-    
-    
-    
-<div class="wrapper">
+    <div class="wrapper">
         
-   <h3> <strong>Java JDK, JRE and JVM</strong></h3>
         
-        <p><strong>In this tutorial, you will learn about JDK, JRE, and JVM. You will also learn the key differences between them.
-            </strong></p>
-
-        <hr>
-        <br>
-       <h5><strong>What is JVM? </strong></h5>
-        <p><strong>JVM</strong> (Java Virtual Machine)is a virtual machine that enables a computer to run Java programs as well as programs written in other languages that are also compiled to Java bytecode.</p><br>
-        <!--        <p>When you run the Java program, Java compiler first compiles your Java code to bytecode. Then, the JVM translates bytecode into native machine code (set of instructions that a computer's CPU executes directly).</p>-->
-    
-            <h6 class="subheading"><strong>Here is how JVM works:</strong></h6>
         
-        <p>First, Java code is complied into bytecode. This bytecode gets interpreted on different machines Between host system and Java source, Bytecode is an intermediary language.JVM is responsible for allocating memory space.</p>
-        <br>
-        <p> The JVM is detailed by a specification that formally describes what is required in a JVM implementation. Having a specification ensures interoperability of Java programs across different implementations so that program authors using the Java Development
-            Kit (JDK) need not worry about idiosyncrasies of the underlying hardware platform.
-        </p><br>
-        <center>
-            <img alt="How does Java program work?" src="javaphoto/how-java-program-runs.jpg" title="Working of Java Program" width="">
-            <figcaption><strong>Working of Java Program</strong></figcaption>
-            <br>
-        </center>
-        <p>So, now we understood that the primary function of JVM is to execute the byte code produced by compiler. <strong>Each operating system has different JVM, however the output they produce after execution of byte code is same across all operating systems.</strong>            Which means that the byte code generated on Windows can be run on Mac OS and vice versa. That is why we call java as platform independent language. </p>
-
-        <!--        <p>Java is a platform-independent language. It's because when you write Java code, it's ultimately written for JVM but not your physical machine (computer). Since JVM executes the Java bytecode which is platform-independent, Java is platform-independent.</p>-->
-
-
-        <hr>
-        <br>
-        <h5><strong>What is JRE? </strong> </h5>
-        <p><strong>JRE</strong> (Java Runtime Environment) is a software package that provides Java class libraries, Java Virtual Machine (JVM), and other components that are required to run Java applications.</p>
-        <br>
-        <p>Java Run-time Environment (JRE) is the part of the Java Development Kit (JDK). It is a freely available software distribution which has Java Class Library, specific tools, and a stand-alone JVM. It is the most common environment available on devices
-            to run java programs. The source Java code gets compiled and converted to Java bytecode. If you wish to run this bytecode on any platform, you require JRE. The JRE loads classes, verify access to memory, and retrieves the system resources.
-            JRE acts as a layer on the top of the operating system.</p>
-
-
-
-        <!--
-        <p>It is: </p><br>
-        <ul>
-         <li>A <strong> specification </strong> where working of Java Virtual Machine is specified. But implementation provider is independent to choose the algorithm. Its implementation has been provided by Sun and other companies.</li>
-         <li>An <strong>implementation </strong> is a computer program that meets the requirements of the JVM specification. </li>
-         <li><strong>Runtime</strong> Instance Whenever you write java command on the command prompt to run the java class, an instance of JVM is created.</li>
-        </ul>
--->
-
-        <center>
-            <img alt="JRE contains JVM and other Java class libraries." src="javaphoto/java-realtime-enviornment_.jpg" title="Java Runtime Environment" width="" class="paraimg">
-            <figcaption style="text-align: center;"><strong>Java Runtime Environment</strong></figcaption>
-            <br>
-        </center>
-
-
-        <p> If you need to run Java programs, but not develop them, JRE is what you need. You can download JRE from <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Java SE Runtime Environment 8 Downloads</a> page.</p>
-
-
-
-
-
-        <hr>
-        <br>
-
-        <h5 ><strong>What is JDK? </strong> </h5>
-        <p><strong>JDK </strong>(Java Development Kit) is a software development kit required to develop and execute(run) the Java program. When you download JDK, JRE is also downloaded with it.<br>
-            <p>
-                The Java Development Kit (JDK) is a software development environment used for developing Java applications and applets. It includes the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation
-                generator (Javadoc) and other tools needed in Java development
-            </p>
-            <h6  class="subheading"><strong> JDK is a kit(or package) which includes two things:</strong></h6>
-            <p>Development Tools(to provide an environment to develop your java programs)<br> JRE (to execute your java program).</p>
-
-            <center>
-                <img alt="JDK contains JRE and other tools to develop Java applications." src="javaphoto/java-development-kit.jpg" title="Java development kit" width="">
-                <figcaption><strong>Java Development Kit</strong></figcaption>
-                <br>
-            </center>
-            <p>In addition to JRE, JDK also contains a number of development tools (compilers, JavaDoc, Java Debugger, etc).</p>
         
-            <p>If you want to develop Java applications, <a href="http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html">download JDK</a> .</p>
-
-
-            <hr>
-            <br>
-            <h5><strong>Relationship between JVM, JRE, and JDK. </strong> </h5>
-
-            <p><strong>JDK -</strong> Java Development Kit (in short JDK) is Kit which provides the environment to develop and execute(run) the Java program. JDK is a kit(or package) which includes two things:</p>
-            <ul>
-                <li> Development Tools(to provide an environment to develop your java programs)</li>
-                <li>JRE (to execute your java program).</li>
+            <h3><strong>Java Operators</strong></h3>
+        
+       <strong> <p >In this tutorial, you'll learn about different types of operators in Java, their syntax and how to use them with the help of examples.</p></strong>
+        <p >Java provides many types of operators which can be used according to the need. They are classified based on the functionality they provide. Some of the types are- </p>
+        
+            <ul class="list-group" style="width: fit-content; ">
+                <li class="list-group-item">Arithmetic Operators</li>
+                <li class="list-group-item" >Unary Operators</li>
+                <li class="list-group-item" >Assignment Operator</li>
+                <li class="list-group-item">Relational Operators</li>
+                <li class="list-group-item">Logical Operators</li>
+                <li class="list-group-item">Bitwise Operators</li>
+                <li class="list-group-item">Ternary Operator</li>
+                <li class="list-group-item">Shift Operators</li>
+                <li class="list-group-item">instance ofoperator</li>
             </ul>
-            <p><strong>JRE -</strong> Java Runtime Environment (to say JRE) is an installation package which provides environment to only run(not develop) the java program(or application)onto your machine. JRE is only used by them who only wants to run the
-                Java Programs i.e. end users of your system.<br>
-                <strong>JVM -</strong> Java Virtual machine(JVM) is a very important part of both JDK and JRE because it is contained or inbuilt in both. Whatever Java program you run using JRE or JDK goes into JVM and JVM is responsible for executing
-                the java program line by line hence it is also known as interpreter.
-            </p>
-            <center>
-                <img alt="JRE contains JVM and class libraries and JDK contains JRE, compilers, debuggers, and JavaDoc" src="javaphoto/jdk-jre-jvm.jpg" title="Relationship between JVM, JRE, and JDK" width="">
-                <figcaption><strong>Relationship between JVM, JRE, and JDK</strong></figcaption>
-                <br>
-    </center>
+            
+        
 
-</div>
+
+
+
+        <h6 class="subheading"><strong>1. Arithmetic Operators</strong></h6>
+
+        <p > <strong >Arithmetic Operators:</strong> They are used to perform simple arithmetic operations on primitive data types.<br >
+            1.<mark > * </mark> : Multiplication<br >
+            2.<mark > / </mark> : Division<br >
+            3.<mark > % </mark> : Modulo <br>
+            4.<mark > + </mark> : Addition<br >
+            5.<mark > - </mark> : Subtraction <br> <br>
+            <strong >EXAMPLE:</strong></p>
+    
+
+        <pre ><code >
+// Java program to illustrate 
+// arithmetic operators 
+public class operators { 
+    public static void main(String[] arg)
+    { 
+        int a = 20, b = 10, c = 0, d = 20, e = 40, f = 30; 
+        String x = "Thank", y = "You"; 
+                                     
+        // + and - operator 
+        System.out.println("a + b = " + (a + b)); 
+        System.out.println("a - b = " + (a - b)); 
+                                   
+        // + operator if used with strings 
+        // concatenates the given strings. 
+        System.out.println("x + y = " + x + y);
+  
+        // * and / operator 
+        System.out.println("a * b = " + (a * b)); 
+        System.out.println("a / b = " + (a / b)); 
+  
+        // modulo operator gives remainder 
+        // on dividing first operand with second 
+        System.out.println("a % b = " + (a % b)); 
+  
+        // if denominator is 0 in division 
+        // then Arithmetic exception is thrown. 
+        // uncommenting below line would throw 
+        // an exception 
+        // System.out.println(a/c); 
+        }
+    }
+        
+    
+<strong >Output:
+                a + b = 30
+                a - b = 10
+                x + y = ThankYou
+                a * b = 200
+                a / b = 2
+                a % b = 0</strong>
+              </code></pre>
+
+        <h6 class="subheading"><strong>2.Unary Operators</strong></h6>
+        <p > <strong >Unary Operators: </strong>Unary operators need only one operand. They are used to increment, decrement or negate a value.<br >
+            1.<mark > - </mark> : Unary minus, used for negating the values.<br >
+            2. <mark > + </mark> : Unary plus, used for giving positive values. Only used when deliberately converting a negative value to positive.<br >
+            3.<mark > ++ </mark> : Increment operator, used for incrementing the value by 1. There are two varieties of increment operator. <br>
+            4.<mark > Post-Increment </mark> : Value is first used for computing the result and then incremented.<br >
+            5.<mark > Pre-Increment </mark>:  Value is incremented first and then result is computed. <br> 
+            4.<mark > -- </mark> : Decrement operator, used for decrementing the value by 1. There are two varieties of decrement operator.<br >
+            5.<mark > Post-decrement </mark>: Value is first used for computing the result and then decremented. <br> 
+            4.<mark > Pre-Decrement  </mark> : Value is decremented first and then result is computed.<br >
+            5.<mark > !  </mark>:Logical not operator, used for inverting a boolean value. <br> <br>
+            <strong >EXAMPLE:</strong></p>
+            
+            
+            <pre ><code >
+// Java program to illustrate 
+// unary operators 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int a = 20, b = 10, c = 0, d = 20, e = 40, f = 30; 
+        boolean condition = true; 
+  
+        // pre-increment operator 
+        // a = a+1 and then c = a; 
+          c = ++a; 
+          System.out.println("Value of c (++a) = " + c); 
+   
+                                   
+        // post increment operator 
+        // c=b then b=b+1 
+          c = b++; 
+          System.out.println("Value of c (b++) = " + c); 
+  
+        // pre-decrement operator 
+        // d=d-1 then c=d 
+          c = --d; 
+          System.out.println("Value of c (--d) = " + c); 
+  
+        // post-decrement operator 
+        // c=e then e=e-1 
+          c = e--; 
+          System.out.println("Value of c (e--) = " + c); 
+  
+        // Logical not operator 
+          System.out.println("Value of !condition =" + !condition); 
+        }
+    }
+        
+<strong >Output:
+            Value of c (++a) = 21
+            Value of c (b++) = 10
+            Value of c (--d) = 19
+            Value of c (e--) = 40
+            Value of !condition =false</strong>
+              </code></pre>
+              
+              
+        <h6 class="subheading"><strong>3.Assignment Operator</strong></h6>
+       <p><strong>Assignment Operator</strong>  : <mark>‘=’</mark> Assignment operator is used to assign a value to any variable. It has a right to left associativity, i.e value given on right hand side of operator is assigned to the variable on the left and therefore right hand side value must be declared before using it or should be a constant.<br>
+         <mark> += </mark>, for adding left operand with right operand and then assigning it to variable on the left.<br>
+         <mark> -= </mark>, for subtracting left operand with right operand and then assigning it to variable on the left.<br>
+         <mark>*=</mark> , for multiplying left operand with right operand and then assigning it to variable on the left.<br>
+         <mark>/=</mark> , for dividing left operand with right operand and then assigning it to variable on the left.<br>
+          <mark> %= </mark>, for assigning modulo of left operand with right operand and then assigning it to variable on the left.
+          <br><br>
+           <strong >EXAMPLE:</strong></p>
            
-         
-           
+            <pre ><code >
+// Java program to illustrate 
+// assignment operators 
+    public class operators { 
+        public static void main(String[] args) 
+        { 
+            int a = 20, b = 10, c; 
+  
+            // simple assignment operator 
+            c = b; 
+            System.out.println("Value of c = " + c);
+        }
+    }
+        
+<strong >Output:
+        Value of c = 10</strong>
+              </code></pre>
+              
+        <h6 class="subheading"><strong>4.Relational Operator</strong></h6>
+       <p><strong>Relational Operator</strong>  : The equality and relational operators determine the relationship between the two operands. It checks if an operand is greater than, less than, equal to, not equal to and so on. Depending on the relationship, it is evaluated to either true or false.<br>
+         <mark> == </mark>, Equal to : returns true of left hand side is equal to right hand side.<br>
+         <mark> != </mark>, Not Equal to : returns true of left hand side is not equal to right hand side.<br>
+         <mark> < </mark>, less than : returns true of left hand side is less than right hand side.<br>
+         <mark> <= </mark> , less than or equal to : returns true of left hand side is less than or equal to right hand side.<br>
+         <mark> > </mark> , Greater than : returns true of left hand side is greater than right hand side..<br>
+          <mark> >= </mark>,Greater than or equal to: returns true of left hand side is greater than or equal to right hand side.
+          <br><br>
+           <strong >EXAMPLE:</strong></p>
              
-                 
+             
+             <pre ><code>
+// Java program to illustrate 
+// relational operators 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int a = 30, b = 20; 
+        
+        // various conditional operators 
+        System.out.println("a == b :" + (a == b)); 
+        System.out.println("a < b :" + (a < b)); 
+        System.out.println("a <= b :" + (a <= b)); 
+        System.out.println("a &gt; b :" + (a > b)); 
+        System.out.println("a >= b :" + (a >= b)); 
+        System.out.println("a != b :" + (a != b)); 
+    }
+<strong >Output:
+    a == b :false
+    a < b :false
+    a <= b :false
+    a > b :true
+    a >= b :true
+    a != b :true</strong>
+              </code></pre>
+             
+    <h6 class="subheading"><strong>5.Logical Operators</strong></h6>
+    <p><strong>Logical Operators</strong> :These operators are used to perform <em>“logical AND” and “logical OR” </em>operation, i.e. the function similar to AND gate and OR gate in digital electronics. One thing to keep in mind is the second condition is not evaluated if the first one is false, i.e. it has a short-circuiting effect. Used extensively to test for several conditions for making a decision.<br>
+        Conditional operators are-<br>
+         <mark> || </mark> Logical OR : returns true if at least one condition is true.<br>
+         <mark> &amp; &amp; </mark> Logical AND : returns true when both conditions are true.<br>
+          <br>
+           <strong >EXAMPLE:</strong></p>
+             
+             
+             <pre ><code >
+// Java program to illustrate 
+// Logica operators 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int number1 = 1, number2 = 2, number3 = 9;
+        boolean result;
+        
+        // At least one expression needs to be true for the result to be true
+        result = (number1 > number2) || (number3 > number1);
+
+        // result will be true because (number1 > number2) is true
+        System.out.println(result);
+    			
+        // All expression must be true from result to be true	
+        result = (number1 > number2) && (number3 > number1);
+
+        // result will be false because (number3 > number1) is false
+        System.out.println(result);
+    }
+}
+  
+<strong >Output:
+      true
+      false </strong>
+              </code></pre>
+     
+
+
            
-<!--           wrapper end-->
+   <h6 class="subheading"><strong>6.Ternary operator </strong></h6>
+    <p><strong>Ternary operator </strong>  : Ternary operator is a shorthand version of if-else statement. It has three operands and hence the name ternary. General format is-<br>
+     <mark> condition ? if true : if false</mark><br>
+     The above statement means that if the condition evaluates to true, then execute the statements after the ‘?’ else execute the statements after the ‘:’<br><br>
+           <strong >EXAMPLE:</strong></p>
+             
+             
+             <pre ><code >
+// Java program to illustrate 
+// Ternary operator 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int a = 20, b = 10, c = 30, result; 
+  
+        // result holds max of three 
+        // numbers 
+        result = ((a > b) 
+              ? (a > c) 
+              ? a 
+              : c 
+              : (b > c) 
+              ? b 
+              : c); 
+        System.out.println("Max of three numbers =" + result); 
+    
+    }
+}
+  
+<strong >Output:
+        Max of three numbers = 30
+</strong>
+              </code></pre>
+              
+              
+               <h6 class="subheading"><strong>7.Bitwise Operators</strong></h6>
+    <p><strong>Bitwise Operators</strong> :These operators are used to perform manipulation of individual bits of a number. They can be used with any of the integer types. They are used when performing update and query operations of Binary indexed tree.<br>
+   <mark> &amp;</mark>, Bitwise AND operator: returns bit by bit AND of input values.<br>
+     <mark>|</mark>, Bitwise OR operator: returns bit by bit OR of input values.<br>
+     <mark>^</mark>, Bitwise XOR operator: returns bit by bit XOR of input values.<br>
+      <mark>&#126;</mark>, Bitwise Complement Operator: This is a unary operator which returns the one’s compliment representation of the input value, i.e. with all bits inversed.<br><br>
+         
+           <strong >EXAMPLE:</strong></p>
+             
+             
+             <pre ><code >
+// Java program to illustrate 
+// bitwise operators 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int a = 0x0005; 
+        int b = 0x0007; 
+  
+        // bitwise and 
+        // 0101 &amp; 0111=0101 
+        System.out.println("a&amp;b = " + (a &amp; b));
+    }
+}
+  
+        
+<strong >Output:
+    a&amp;b = 5
+</strong>
+              </code></pre>
+     
+           
+           <h6 class="subheading"><strong>8.Shift Operators </strong></h6>
+    <p><strong>Shift Operators </strong> :These operators are used to shift the bits of a number left or right thereby multiplying or dividing the number by two respectively. They can be used when we have to multiply or divide a number by two. General format-<br>
+     <mark> number shift_op number_of_places_to_shift;</mark><br>
+     <mark> &lt; &lt;</mark> Left shift operator: shifts the bits of the number to the left and fills 0 on voids left as a result. Similar effect as of multiplying the number with some power of two.<br>
+      <mark>&gt; &gt;</mark> Signed Right shift operator: shifts the bits of the number to the right and fills 0 on voids left as a result. The leftmost bit depends on the sign of initial number. Similar effect as of dividing the number with some power of two.<br>
+      <mark>&gt; &gt;&gt;</mark> Unsigned Right shift operator: shifts the bits of the number to the right and fills 0 on voids left as a result. The leftmost bit is set to 0.<br><br>
+           <strong >EXAMPLE:</strong></p>
+             
+             
+             <pre ><code >
+// Java program to illustrate 
+// Shift Operators 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        int a = 0x0005; 
+        int b = -10; 
+  
+        // left shift operator 
+        // 0000 0101<<2 =0001 0100(20) 
+        // similar to 5*(2^2) 
+        System.out.println("a<<2 = " + (a << 2)); 
+    }
+}
+  
+        
+<strong>Output:
+    a &lt;&lt; 2 = 20
+    </strong>
+              </code></pre>
+     
+           
+           
+           <h6 class="subheading"><strong>9.Instance of operator</strong></h6>
+    <p><strong>Instance of operator </strong> :Instance of operator is used for type checking. It can be used to test if an object is an instance of a class, a subclass or an interface. General format-<br>
+     <mark> object instance of class/subclass/interface</mark><br><br>
+           <strong >EXAMPLE:</strong></p>
+             
+             
+             <pre ><code >
+// Java program to illustrate 
+// Instance of operator 
+public class operators { 
+    public static void main(String[] args) 
+    { 
+        String test = "asdf";
+        boolean result;
+    	
+        result = test instanceof String;
+        System.out.println("Is test an object of String? " + result);
+    
+    }
+}
+<strong >Output:
+    Is test an object of String? true
+</strong>
+              </code></pre>
+     
+
+    </div>
+    
+   
+  
+ <!--           wrapper end-->
             <div class="but text-right">
-                <button class="btn btn-primary pull-right"><a href="1-3.html">Next Topic&nbsp;<i
+                <button class="btn btn-primary pull-right"><a href="1-5.html">Next Topic&nbsp;<i
                             class="fas fa-arrow-right "></i></a></button>
             </div><br>
         </section>
@@ -510,3 +768,5 @@
         <script src='../side.js'></script>
     </body>
     </html>
+    
+    
