@@ -102,7 +102,7 @@
                         <a href="1-6.html" class="closed">Python Type Conversion</a>
                     </li>
                     <li>
-                        <a href="1-7.html" class="opened">Python I/O and import</a>
+                        <a href="1-7.html" class="closed">Python I/O and import</a>
                     </li>
                     <li>
                         <a href="1-8.html" class="closed">Python Operators</a>
@@ -129,7 +129,7 @@
                             <a href="2-4.html" class="closed">Python break and continue</a>
                         </li>
                         <li>
-                            <a href="2-5.html" class="closed">Python Pass</a>
+                            <a href="2-5.html" class="opened">Python Pass</a>
                         </li>
                 </ul>
             </li>
@@ -295,7 +295,6 @@
 
     </section>
 
-
     
 
     <br>
@@ -311,7 +310,7 @@
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
                 <li class="breadcrumb-item"><a  href="../python.html#languages">Python Index</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Python I/O and Import</li>
+                <li class="breadcrumb-item active" aria-current="page">Python Pass</li>
             </ul>
         </nav>
 
@@ -322,65 +321,53 @@
 
     <br>
         <div class="wrapper">
+            <h3>Python Pass</h3>
             
-                <h3>Python I/O and Import</h3><br>
-                <p>While working in a programming language, you may require to input some data and then use instruction to output a value. Also, you might work on files that may need to be opened, closed, read, or write. Thus, you should have knowledge of input and output in Python. In this part of the Python tutorial, you learn how to input and output data.</p>
+            <h4>The Pass Statement</h4>
+            <p>In Python, the pass statement is a no operation statement. ​<br>That is , nothing happens when pass statement is executed.​</p>
+            <pre>
+                <code>
+if (num==15):
+    #write your code and remove pass
+    pass
+    #pass will prevent the code from syntax error
+elif (num==18):
+    break
 
 
-                <h4>The input Function</h4>
-<p>The input() function is used to get data from the user in Python Command Line programs.</p>
-<p><strong>Syntax</strong></p>
+                </code>
+            </pre>
+            <p><b>Example:</b></p>
+            <pre>
+                <code>
+i=0​
 
-&lt;return&gt; = input(&quot;&lt;prompt&gt;&quot;)
-<p>Where prompt is a string that will be display for the user to view which should provide some kind of indication of the usage and type of data you are expecting and return is the returned value from the function.
-e.g.</p>
+while i<10:​
 
-<code><pre>&lt;&lt;&lt;i = &quot;Hello coders!! Welcome to CODEMISTIC&quot;
-&lt;&lt;&lt;x = input(&quot;enter a value:&quot;)
-enter a value: i
-&lt;&lt;&lt;print i</pre></code>
-<code><pre><strong>Output</strong>
-Hello coders!! Welcome to CODEMISTIC</pre></code>
+    i=i+1​
+
+    if(i%2!=0):​
+
+        pass​
+
+    else:​
+
+        print(i)
+                </code>
+            </pre>
+                <p><b>Output:</b></p>
+                <pre><code>
+2
+4
+6
+8
+10
+                </code></pre>
+</div>
 
 
 
 
-
-<hr />
-
-<h3>Python Import</h3>
-
-<p>Import in python is similar to #include header_file in C/C++. Python modules can get access to code from another module by importing the file/function using import. The import statement is the most common way of invoking the import machinery, but it is not the only way.<br>
-
-<strong>import module_name</strong><br>
-When import is used, it searches for the module initially in the local scope by calling __import__() function. The value returned by the function are then reflected in the output of the initial code.</p>
-
-<p>For example, we can import the <code>math</code> module by typing the following line:</p>
-
-<pre>
-<code>import math</code></pre>
-
-<p>We can use the module in the following ways:</p>
-
-<pre>
-<code>import math
-print(math.pi)</code></pre>
-
-<p><strong>Output</strong></p>
-
-<pre>
-<samp>3.141592653589793</samp></pre>
-
-<p>We can also import some specific attributes and functions only, using the <code>from</code> keyword. For example:</p>
-
-<pre>
-<code>&gt;&gt;&gt; from math import pi
-&gt;&gt;&gt; pi
-3.141592653589793</code></pre>
-<hr>
-            
-
-            
 
 
 
@@ -390,7 +377,7 @@ print(math.pi)</code></pre>
 
         <br> &nbsp;&nbsp;&nbsp;&nbsp;
        <div class="but text-right">
-            <button class="btn btn-primary pull-right"><a href="1-8.html">Next Topic&nbsp;<i
+            <button class="btn btn-primary pull-right"><a href="3-1.html">Next Topic&nbsp;<i
                         class="fas fa-arrow-right "></i></a></button>
         </div><br>
     </section>
