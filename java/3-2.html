@@ -115,7 +115,7 @@
                     <li><a href="2-1.html" class="closed">Java if...else</a></li>
                     <li><a href="2-2.html" class="closed">Java switch Statement</a></li>
                     <li><a href="2-3.html" class="closed">Java for Loop</a></li>
-                    <li><a href="2-4.html" class="closed">Java for-each Loop</a></li>
+                    <li><a href="2-4.html" class="closed">Java for-else Loop</a></li>
                     <li><a href="2-5.html" class="closed">Java while Loop</a></li>
                     <li><a href="2-6.html" class="closed">Java break Statement</a></li>
                     <li><a href="2-7.html" class="closed">Java continue Statement</a></li>
@@ -125,8 +125,8 @@
                 <div class="link">Java Arrays<i class="fa fa-chevron-down"></i>
                 </div>
                 <ul class="submenu collapse show">
-                    <li><a href="3-1.html" class="opened" >Java Arrays</a></li>
-                    <li><a href="3-2.html" class="closed">Multidimensional Array</a></li>
+                    <li><a href="3-1.html" class="closed" >Java Arrays</a></li>
+                    <li><a href="3-2.html" class="opened">Multidimensional Array</a></li>
                     <li><a href="3-3.html" class="closed" >Java Copy Arrays</a></li>
                     
                 </ul>
@@ -325,91 +325,129 @@
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
                 <li class="breadcrumb-item"><a  href="../java.html#languages">Java Index</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Java Arrays</li>
+                <li class="breadcrumb-item active" aria-current="page">Java for Loop</li>
             </ul>
         </nav>
 
         <!-- breadcrumb ending -->
     <!-- HEADING -->
     <div class="wrapper">
-    <h3><strong>Java Arrays</strong></h3>
-    <p><strong>In this tutorial, we will learn to work with arrays in Java. We will learn to declare, initialize, and access array elements with the help of examples.
-</strong></p>
-   <p> Normally, an array is a collection of similar type of elements which has contiguous memory location.Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.We can store only a fixed set of elements in a Java array.<br>Array in Java is index-based, the first element of the array is stored at the 0th index, 2nd element is stored on 1st index and so on. </p>
-   <h4><strong>Types of Array in java
-</strong></h4>
-  <ul>There are two types of array.
+    
+   <h3> <strong>Multidimensional Arrays</strong></h3> 
+    <p><strong>In this tutorial, we will learn about the Java multidimensional array using 2-dimensional arrays and 3-dimensional arrays with the help of examples.</strong></p>
+    <p>Multi-dimensional arrays are an extended form of one-dimensional arrays and are frequently used to store data for mathematic computations, image processing, and record management.<br><br>A multi-dimensional array is a collection of one-dimensional arrays and can represent relational tables and matrices. Both matrices and tables can be seen as a collection of rows that can be mapped into an array of rows (a one-dimensional array). Multi-dimensional arrays store values in row-major order, meaning that elements of all rows are stored in a consecutive (one row after the another) manner. A real-life example of multi-dimensional arrays would be the total number of units sold every day, of every week in a month at a store.</p>
+        <p><strong>For example,</strong></p>
+<code><pre>int[][] a = new int[3][4];</pre></code>
+<p>
+Here, we have created a multidimensional array named a. It is a 2-dimensional array, that can hold a maximum of 12 elements,</p>
+    
+    <h3><strong>Two – dimensional Array (2D-Array)
+</strong></h3>
+   <p>Two – dimensional array is the simplest form of a multidimensional array. A two – dimensional array can be seen as an array of one – dimensional array for easier understanding.</p>
+    
+    
+    
+    <p><strong>Indirect Method of Declaration:</strong></p>
+    
+    <p>Declaration – Syntax:</p>
+<code><pre>data_type[][] array_name = new data_type[x][y];
+          For example: int[][] arr = new int[120][240];
+         //a 2D array or matrix</pre></code>
+         
+    <p>Initialization – Syntax:</p>
+ <code><pre>array_name[row_index][column_index] = value;
+        For example: arr[0][0] = 1;</pre></code>
+    
+    
+    
+   <p><strong>Example of Multidimensional 2D Java Array</strong></p>
+   <code><pre>class GFG { 
+	public static void main(String[] args) 
+	{ 
 
-      <li>Single Dimensional Array
-      </li><li>
-       Multidimensional Array
-      </li>  
-  </ul>
+		int[][] arr = new int[10][20]; 
+		arr[0][0] = 65; 
+
+		System.out.println("arr[0][0] = " + arr[0][0]); 
+	} 
+} 
    
-   <h4><strong> Java Array Index </strong></h4>
-   <p>In Java, each element in an array are associated with a number. The number is known as an array index. We can access elements of an array by using those indices.<br><strong>For example,</strong> </p>
-   <pre><code>int[] age = new int[5];</code></pre>
-   <center><img alt="Java array index" src="javaphoto/java-array-elements.jpg" width="" title="Java Array Index">
-       <figcaption><strong> Java Array Index</strong> </figcaption></center>
-  
-   <br><p>Here, we have an array of length 5. In the image, we can see that each element consists of a number (array index). The array indices always start from 0.
 
-Now, we can use the index number to access elements of the array. For example, to access the first element of the array is we can use age[0], and the second element is accessed using age[1] and so on.</p>
-    <h4><strong>Instantiating an Array in Java
-</strong></h4>
-   <p>In Java, we can initialize arrays during declaration or you can initialize later in the program as per your requirement.
-<br>
-Initialize an Array During Declaration
-       Here's how you can initialize an array during declaration.</p><br>
+   <strong>output:</strong>
+           arr[0][0] = 65
+   </pre></code>
+   
+   <p><strong>Example: Print all elements of 2d array Using Loop</strong></p>
+   <code><pre>class MultidimensionalArray {
+    public static void main(String[] args) {
 
-<code><pre>int[] age = {12, 4, 5, 2, 5};</pre></code>
-<p>This statement creates an array named age and initializes it with the value provided in the curly brackets.
-<br>
-The length of the array is determined by the number of values provided inside the curly braces separated by commas. In our example, the length of age is 5.</p>
-  <center><img alt="Elements are stored in the array" src="javaphoto/initialize-array-during-declaration-java.jpg" width="480" title="Array initialization">
-	<figcaption><strong>Java Arrays initialization</strong></figcaption></center>
-
-   <h4><strong>One-Dimensional Arrays :</strong></h4>
-   <p>A one-dimensional array (or single dimension array) is a type of linear array. Accessing its elements involves a single subscript which can either represent a row or column index.<br><strong>Syntax to Declare an Array in Java</strong></p>
-   <code><pre>dataType[] arr; (or)  
-dataType []arr; (or)  
-dataType arr[];  </pre></code>
-  <p><strong>Instantiation of an Array in Java</strong></p>
-   <pre><code>arrayRefVar=new datatype[size];</code></pre>
-    
-    <h4><strong>Example of Java Array</strong></h4>
-    <code><pre>//Java Program to illustrate how to declare, instantiate, initialize  
-//and traverse the Java array.  
-class Testarray{  
-public static void main(String args[]){  
-int a[]=new int[5];//declaration and instantiation  
-a[0]=100;//initialization  
-a[1]=200;  
-a[2]=700;  
-a[3]=400;  
-a[4]=500;  
-//traversing array  
-for(int i=0;i<a.length;i++) 
-<!--/*length is the property of array */ -->
-System.out.println(a[i]);  
+        int[][] a = {
+            {1, -2, 3}, 
+            {-4, -5, 5, 9}, 
+            {7}, 
+        };
+      
+        for (int i = 0; i < a.length; ++i) {
+            for(int j = 0; j < a[i].length; ++j) {
+                System.out.println(a[i][j]);
+            }
+        }
+    }
 }
-    } 
-    
-  <strong>  Output:</strong>
-100
-200
-700
-400
-500
-     </pre></code>
-     <p><strong>Following are some important point about Java arrays.</strong></p>
-        <p><ul><li>In Java all arrays are dynamically allocated.(discussed below)</li>
-<li>Since arrays are objects in Java, we can find their length using member length. This is different from C/C++ where we find length using sizeof.
-        <li>A Java array variable can also be declared like other variables with [] after the data type.</li>
-        <li>The variables in the array are ordered and each have an index beginning from 0.</li>
-        <li>Java array can be also be used as a static field, a local variable or a method parameter.</li>
-        <li>The size of an array must be specified by an int value and not long or short.</li></p>
 
+
+<strong>output:</strong>
+ 1
+-2
+3
+-4
+-5
+5
+9
+7
+
+   </pre></code>
+   
+   <center><img src="javaphoto/two-d.png"
+    alt="two-d"  title="Click to enlarge" >
+       <strong><figcaption>2D array </figcaption></strong></center>
+   
+   <h3><strong>Three – dimensional Array (3D-Array)
+</strong></h3>
+   <p>Three – dimensional array is a complex form of a multidimensional array. A three – dimensional array can be seen as an array of two – dimensional array for easier understanding.</p>
+    
+    
+    
+    <p><strong>Indirect Method of Declaration:</strong></p>
+    
+    <p>Declaration – Syntax:</p>
+<code><pre>data_type[][][] array_name = new data_type[x][y][z];
+          For example: int[][][] arr = new int[120][240][1324];
+         //a 3D array or matrix</pre></code>
+         
+    <p>Initialization – Syntax:</p>
+ <code><pre>array_name[row_index][column_index] = value;
+        For example: arr[0][0][0] = 6;</pre></code>
+    
+    
+    
+   <p><strong>Example of Multidimensional 3D Java Array</strong></p>
+   <code><pre>class GFG { 
+	public static void main(String[] args) 
+	{ 
+
+		int[][] arr = new int[10][20][23]; 
+		arr[0][0][0] = 65; 
+
+		System.out.println("arr[0][0][0]= " + arr[0][0][0]); 
+	} 
+} 
+   
+
+   <strong>output:</strong>
+           arr[0][0][] = 65
+   </pre></code>
+    
      </div>
      
      
@@ -417,10 +455,9 @@ System.out.println(a[i]);
      
      
      
-     
-<!--     warpperend -->
+<!--     wrapper end-->
     <div class="but text-right">
-        <button class="btn btn-primary pull-right"><a href="3-2.html">Next Topic&nbsp;<i
+        <button class="btn btn-primary pull-right"><a href="1-6.html">Next Topic&nbsp;<i
                     class="fas fa-arrow-right "></i></a></button>
     </div><br>
 </section>

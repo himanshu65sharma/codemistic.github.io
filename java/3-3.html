@@ -115,7 +115,7 @@
                     <li><a href="2-1.html" class="closed">Java if...else</a></li>
                     <li><a href="2-2.html" class="closed">Java switch Statement</a></li>
                     <li><a href="2-3.html" class="closed">Java for Loop</a></li>
-                    <li><a href="2-4.html" class="closed">Java for-each Loop</a></li>
+                    <li><a href="2-4.html" class="closed">Java for-else Loop</a></li>
                     <li><a href="2-5.html" class="closed">Java while Loop</a></li>
                     <li><a href="2-6.html" class="closed">Java break Statement</a></li>
                     <li><a href="2-7.html" class="closed">Java continue Statement</a></li>
@@ -125,9 +125,9 @@
                 <div class="link">Java Arrays<i class="fa fa-chevron-down"></i>
                 </div>
                 <ul class="submenu collapse show">
-                    <li><a href="3-1.html" class="opened" >Java Arrays</a></li>
+                    <li><a href="3-1.html" class="closed" >Java Arrays</a></li>
                     <li><a href="3-2.html" class="closed">Multidimensional Array</a></li>
-                    <li><a href="3-3.html" class="closed" >Java Copy Arrays</a></li>
+                    <li><a href="3-3.html" class="opened" >Java Copy Arrays</a></li>
                     
                 </ul>
             </li>
@@ -325,91 +325,211 @@
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a  href="../tutorials.html"><i class="fas fa-home"></i></a></li>
                 <li class="breadcrumb-item"><a  href="../java.html#languages">Java Index</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Java Arrays</li>
+                <li class="breadcrumb-item active" aria-current="page">Java for Loop</li>
             </ul>
         </nav>
 
         <!-- breadcrumb ending -->
     <!-- HEADING -->
     <div class="wrapper">
-    <h3><strong>Java Arrays</strong></h3>
-    <p><strong>In this tutorial, we will learn to work with arrays in Java. We will learn to declare, initialize, and access array elements with the help of examples.
+    <h3><strong>Java Copy Arrays</strong></h3>
+    <p><strong>In this tutorial, you will learn about different ways you can use to copy arrays (both one dimensional and two-dimensional) in Java with the help of examples.
 </strong></p>
-   <p> Normally, an array is a collection of similar type of elements which has contiguous memory location.Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.We can store only a fixed set of elements in a Java array.<br>Array in Java is index-based, the first element of the array is stored at the 0th index, 2nd element is stored on 1st index and so on. </p>
-   <h4><strong>Types of Array in java
-</strong></h4>
-  <ul>There are two types of array.
-
-      <li>Single Dimensional Array
-      </li><li>
-       Multidimensional Array
-      </li>  
-  </ul>
+   <p>Given an array, we need to copy its elements in a different array.</p>
    
-   <h4><strong> Java Array Index </strong></h4>
-   <p>In Java, each element in an array are associated with a number. The number is known as an array index. We can access elements of an array by using those indices.<br><strong>For example,</strong> </p>
-   <pre><code>int[] age = new int[5];</code></pre>
-   <center><img alt="Java array index" src="javaphoto/java-array-elements.jpg" width="" title="Java Array Index">
-       <figcaption><strong> Java Array Index</strong> </figcaption></center>
-  
-   <br><p>Here, we have an array of length 5. In the image, we can see that each element consists of a number (array index). The array indices always start from 0.
-
-Now, we can use the index number to access elements of the array. For example, to access the first element of the array is we can use age[0], and the second element is accessed using age[1] and so on.</p>
-    <h4><strong>Instantiating an Array in Java
-</strong></h4>
-   <p>In Java, we can initialize arrays during declaration or you can initialize later in the program as per your requirement.
-<br>
-Initialize an Array During Declaration
-       Here's how you can initialize an array during declaration.</p><br>
-
-<code><pre>int[] age = {12, 4, 5, 2, 5};</pre></code>
-<p>This statement creates an array named age and initializes it with the value provided in the curly brackets.
-<br>
-The length of the array is determined by the number of values provided inside the curly braces separated by commas. In our example, the length of age is 5.</p>
-  <center><img alt="Elements are stored in the array" src="javaphoto/initialize-array-during-declaration-java.jpg" width="480" title="Array initialization">
-	<figcaption><strong>Java Arrays initialization</strong></figcaption></center>
-
-   <h4><strong>One-Dimensional Arrays :</strong></h4>
-   <p>A one-dimensional array (or single dimension array) is a type of linear array. Accessing its elements involves a single subscript which can either represent a row or column index.<br><strong>Syntax to Declare an Array in Java</strong></p>
-   <code><pre>dataType[] arr; (or)  
-dataType []arr; (or)  
-dataType arr[];  </pre></code>
-  <p><strong>Instantiation of an Array in Java</strong></p>
-   <pre><code>arrayRefVar=new datatype[size];</code></pre>
-    
-    <h4><strong>Example of Java Array</strong></h4>
-    <code><pre>//Java Program to illustrate how to declare, instantiate, initialize  
-//and traverse the Java array.  
-class Testarray{  
-public static void main(String args[]){  
-int a[]=new int[5];//declaration and instantiation  
-a[0]=100;//initialization  
-a[1]=200;  
-a[2]=700;  
-a[3]=400;  
-a[4]=500;  
-//traversing array  
-for(int i=0;i<a.length;i++) 
-<!--/*length is the property of array */ -->
-System.out.println(a[i]);  
+<h4><strong>Copying Arrays Using Assignment Operator</strong></h4> 
+   <p><strong>Example:</strong></p>  
+   <code><pre>// A Java program to demonstrate copying by one by one 
+// assigning elements of a[] to b[].
+public   class Main {
+    public static void main(String[] args) {
+       
+        int [] numbers = {6,7,8,3,4,9};
+        int [] positiveNumbers = numbers;    // copying arrays
+        // change value of first array
+        numbers[0] = -1;
+        for (int number: positiveNumbers) {
+            System.out.print(number + ", ");
+        }
+    }
 }
-    } 
-    
-  <strong>  Output:</strong>
-100
-200
-700
-400
-500
-     </pre></code>
-     <p><strong>Following are some important point about Java arrays.</strong></p>
-        <p><ul><li>In Java all arrays are dynamically allocated.(discussed below)</li>
-<li>Since arrays are objects in Java, we can find their length using member length. This is different from C/C++ where we find length using sizeof.
-        <li>A Java array variable can also be declared like other variables with [] after the data type.</li>
-        <li>The variables in the array are ordered and each have an index beginning from 0.</li>
-        <li>Java array can be also be used as a static field, a local variable or a method parameter.</li>
-        <li>The size of an array must be specified by an int value and not long or short.</li></p>
+   <strong>output:</strong> 
+   -1
+   7
+   8
+   3
+   4
+   9</pre></code> 
+     <p>In the above example, we have used the assignment operator (=) to copy an array named numbers to another array named positiveNumbers.</p>
+      
+      
+      <h4><strong>2. Using Looping Construct to Copy Arrays</strong></h4> 
+   <p><strong>Example:</strong></p>  
+ <code><pre>
+       
+ // A Java program to demonstrate copying by one by one 
+// assigning elements of a[] to b[]. 
+public class Test 
+{ 
+    public static void main(String[] args) 
+    { 
+        int a[] = {1, 7, 3}; 
+  
+        // Create an array b[] of same size as a[] 
+        int b[] = new int[a.length]; 
+  
+        // Copy elements of a[] to b[] 
+        for (int i=0; i&lt;a.length; i++) 
+            b[i] = a[i]; 
+        /* Change b[] to verify that b[] is different */
+        // from a[] 
 
+        b[0]++; 
+  
+        System.out.println("Contents of a[] "); 
+        for (int i=0; i&lt;a.length; i++)
+          System.out.print(a[i] + " "); 
+  
+        System.out.println("\n\nContents of b[] "); 
+        for (int i=0; i&lt;b.length; i++) 
+            System.out.print(b[i] + " "); 
+    } 
+} 
+<strong>Output:</strong>
+
+Contents of a[] 
+1 7 3 
+
+Contents of b[] 
+2 7 3  </pre></code> 
+<p>In the above example, we have used the for loop to iterate through each element of the source array. In each iteration, we are copying elements from the source array to the destination array.</p>
+      
+      
+      
+    <h4><strong>3. Copying Arrays Using arraycopy() method
+</strong></h4>
+        <p> The arraycopy() method allows you to copy a specified portion of the source array to the destination array. <br>For example,</p>
+
+        <mark>arraycopy(Object src, int srcPos,Object dest, int destPos, int length)</mark>
+   
+        <p><strong>Example:</strong></p> 
+ <code><pre>
+       
+ // A Java program to demonstrate array copy using 
+// System.arraycopy() 
+public class Test 
+{ 
+    public static void main(String[] args) 
+    { 
+        int a[] = {1, 7, 3}; 
+  
+        // Create an array b[] of same size as a[] 
+        int b[] = new int[a.length]; 
+  
+        // Copy elements of a[] to b[] 
+        System.arraycopy(a, 0, b, 0, 3); 
+  
+        // Change b[] to verify that b[] is different 
+        // from a[] 
+        b[0]++; 
+  
+        System.out.println("Contents of a[] "); 
+        for (int i=0; i&lt;a.length; i++) 
+            System.out.print(a[i] + " "); 
+  
+        System.out.println("\n\nContents of b[] "); 
+        for (int i=0; i&lt;b.length; i++) 
+            System.out.print(b[i] + " "); 
+    } 
+} 
+<strong>Output:</strong>
+
+Contents of a[] 
+1 7 3 
+
+Contents of b[] 
+2 7 3  </pre></code> 
+<p>System.arraycopy(n1, 2, n3, 1, 2) - 2 elements of the n1 array starting from index 2 are copied to the index starting from 1 of the n3 array
+</p>
+      
+      
+      
+          <h4><strong>4. Copying Arrays Using copyOfRange() method
+
+</strong></h4>
+        <p> The copyOfRange() method allows you to copy a specified portion of the source array to the destination array. <br>For example,</p>
+
+        <mark>int[] destination1 = Arrays.copyOfRange(source, 0, source.length);</mark>
+   
+        <p><strong>Example:</strong></p> 
+ <code><pre>
+       
+ // A Java program to demonstrate array copy using 
+// System.copyOfRange()
+public class ArraysCopy {
+    public static void main(String[] args) {
+      
+        int[] source = {2, 3, 12, 4, 12, -2};
+      
+        // copying entire source array to destination
+        int[] destination1 = Arrays.copyOfRange(source, 0, source.length);      
+        System.out.println("destination1 = " + Arrays.toString(destination1)); 
+      
+        // copying from index 2 to 5 (5 is not included) 
+        int[] destination2 = Arrays.copyOfRange(source, 2, 5); 
+        System.out.println("destination2 = " + Arrays.toString(destination2));   
+    }
+}
+<strong>Output:</strong>
+
+destination1 = [2, 3, 12, 4, 12, -2]
+destination2 = [12, 4, 12] </pre></code> 
+<p>Here, we can see that we are creating the destination1 array and copying the source array to it at the same time. We are not creating the destination1 array before calling the copyOfRange() method
+</p>
+     
+               <h4><strong>5. Copying Arrays Using  Using Clone() method
+
+</strong></h4>
+       
+        <mark>int[] destination2 = destination1.clone();</mark>
+   
+        <p><strong>Example:</strong></p> 
+ <code><pre>
+       
+ // A Java program to demonstrate array copy using clone() 
+public class Test 
+{ 
+    public static void main(String[] args) 
+    { 
+        int a[] = {1, 8, 3}; 
+  
+        // Copy elements of a[] to b[] 
+        int b[] = a.clone(); 
+  
+        // Change b[] to verify that b[] is different 
+        // from a[] 
+        b[0]++; 
+  
+        System.out.println("Contents of a[] "); 
+        for (int i=0; i<a.length; i++) 
+            System.out.print(a[i] + " "); 
+  
+        System.out.println("\n\nContents of b[] "); 
+        for (int i=0; i<b.length; i++) 
+            System.out.print(b[i] + " "); 
+    } 
+} 
+<strong>Output:</strong>
+
+Contents of a[] 
+1 8 3 
+
+Contents of b[] 
+2 8 3  </pre></code> 
+<p>Here, we can see that we are creating t copying the source array to it at the same time. By using clone() methord.
+</p>
+      
+      
      </div>
      
      
@@ -418,9 +538,9 @@ System.out.println(a[i]);
      
      
      
-<!--     warpperend -->
+<!--     wrapper end-->
     <div class="but text-right">
-        <button class="btn btn-primary pull-right"><a href="3-2.html">Next Topic&nbsp;<i
+        <button class="btn btn-primary pull-right"><a href="1-6.html">Next Topic&nbsp;<i
                     class="fas fa-arrow-right "></i></a></button>
     </div><br>
 </section>
