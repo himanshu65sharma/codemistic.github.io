@@ -284,68 +284,124 @@
     <!-- HEADING -->
     <div class="wrapper">
             <h3>C++ Variables and Literals</h3>
-             <h4>What are Variables?</h4>
-            <p>In programming, a variable is container(storage area) to hold data.,<br>To indicate the storage area, each variable should be given a unique name (identifier).<br>
-            <strong>Declaring(Creating) a Variable:</strong><br>
-            Syntax:<br>type variable = value;<br>For ex-<br>
-            int n=7;<br>In this example 'int' is the data type of the variable , 'n' is the identifier and '7' is the value which is stored inside of variable n.<br>Note that in this example n stores a integer value.But that is not the limit of variables.,<br>In C++, there are different types of variables(defined with different keywords), for example:<br>
-        <ul>
-            <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
-            <li>double - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
-            <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
-            <li>string - stores text, such as "Hello World". String values are surrounded by double quotes</li>
-            <li>bool - stores values with two states: true or false</li>
-        </ul>
-        <strong>Rules For naming a Variable: </strong><br>
-        <ul>
-            <li>Variable names in C++ can range from 1 to 255 characters.</li>
-            <li>All variable names must begin with a letter of the alphabet or an underscore(_).</li>
-            <li>After the first initial letter, variable names can also contain letters and numbers.  </li>
-            <li> Variable names are case sensitive.</li>
-            <li>No spaces or special characters are allowed.</li>
-            <li>You cannot use a C++ keyword (a reserved word) as a variable name.</li>
-        </ul>
-        </p>
-        <h4>What Are Literals?</h4>
-            <p>
-            In programming, Literal is an object that represent a fixed value in your code.Generally,both terms,constants and literals are used interchangeably.For eg, “const int = 5;“, is a constant expression and the value 5 is referred to as constant integer literal.<br>There are 5 types of Literals in C++ :
+
+             <h4>What is Variables?</h4>
+
+            <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development,
+                as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and
+                packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
+                <br>Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input
+                will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an exception. When the program doesn't catch the exception, the interpreter prints a stack trace. A source level debugger allows inspection
+                of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power. On the
+                other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very effective.<br> Python is a popular programming language. It was created
+                by Guido van Rossum, and released in 1991.</p>
+            <h4>Who manages Python Today?</h4>
+
+            <p>From version 2.1 onwards, Python is managed by Python Software Foundation situated in Delaware, USA It is a non-profit organization devoted to the growth and enhancement of Python language. Their website is http://www.python.org .</p>
+            <h4>What can Python do?</h4>
             <ul>
-                <li>Integer</li>
-                <li>Float</li>
-                <li>Character</li>
-                <li>String</li>
-                <li>Boolean</li>
+                <li>Python can be used on a server to create web applications.</li>
+                <li>Python can be used alongside software to create workflows.</li>
+                <li>Python can connect to database systems. It can also read and modify files.</li>
+                <li>Python can be used to handle big data and perform complex mathematics.</li>
+                <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
             </ul>
-            <strong>1.Integer Literals-</strong><br>
-            An integer is a numeric literal(associated with numbers) without any fractional or exponential part. There are three types of integer literals:
+            <h4>Why Python?</h4>
+            Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).<br> • Python has a simple syntax similar to the English language.<br> • Python has syntax that allows developers to write programs with fewer lines than some other
+            programming languages.
+            <br> • Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.<br> • Python can be treated in a procedural way, an object-orientated way or a functional
+            way.
+            <br> There are numerous examples of popular, high-load websites/webapps that have been developed using Python. Here are some of the most popular of them:<br>
             <ul>
-                <li>Decimal (base 10): A non-zero decimal digit followed by zero or more decimal digits(0, 1, 2, 3, 4, 5, 6, 7, 8, 9).<br>For ex: 56 , 78</li> 
-                <li>Octal (base 8): a 0 followed by zero or more octal digits(0, 1, 2, 3, 4, 5, 6, 7).<br>For ex: 045, 076, 06210</li>
-                <li>Hexadecimal (base 16): 0x or 0X followed by one or more hexadecimal digits(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, A, b, B, c, C, d, D, e, E, f, F).<br>For ex: 0x23A, 0Xb4C, 0xFEA</li>
-                <li>Binary literal(base 2): 0b or 0B followed by one or more binary digits(0, 1)<br>For ex: 0b101, 0B111</li>
+                <li>NASA</li>
+                <li>Instagram</li>
+                <li>Mozilla</li>
+                <li>Spotify</li>
+                <li>Reddit</li>
+                <li>Dropbox</li>
+                <li>And above all youtube</li>
             </ul>
-            <strong>2.Floating-point Literals-</strong><br>
-            These are used to represent and store real numbers.A floating-point literal has an integer part, a decimal point, a fractional part, and an exponent part. You can represent floating point literals either in decimal form or exponential form.<br>floating-point literals can be stored either in decimal form or exponential form.<br>While representing the floating-point decimals one must keep two things in mind to produce valid literals:
-            <ul>
-                <li>In the decimal form, one must include the decimal point, exponent part or both, otherwise, it will lead to an error.</li>
-                <li>In the exponential form, one must include the integer part, fractional part or both, otherwise, it will lead to an error.</li>
-            </ul>
-           <b>Examples-</b><br>
-            3.14159       // Valid<br>
-            314159E-5L    // Valid<br>
-            123E          //Invalid<br>
-            1250f         //Invalid<br>
-            0.e879        //Invalid<br><br>
-            <strong>3.Character Literals-</strong><br>
-            Character literals are the sequence of the characters that are enclosed by single quotes.<br>For example: 'a', 'm', 'F', '2', '}' etc.,<br><br>
-            <strong>4.String Literals-</strong><br>
-            String literals are same as the character literals. The main difference between string and character literals is that string literals are enclosed by the double quote " ".<br>For ex:<br>
-             "This is string literal."<br>""//Null String Constant<br>"  "     //String Constant with 2 white space<br><br>
-            <strong>5.Boolean Literals-</strong><br>
-            Boolean literals are used to work with bool data type.<br>There are 2 Boolean literals:<br>
-            1.A value of True, representing True.<br>
-            2.A value of False, representing False.
-           </p>
+            <h4>Features of Python</h4>
+            <ol>
+                <li>Simple</li>
+                Python is easy to use, powerful, and versatile, making it a great choice for beginners and experts alike. Python's readability makes it a great first programming language — it allows you to think like a programmer and not waste time with confusing syntax.
+                <li>Dynamically typed</li>
+                Python don't have any problem even if we don't declare the type of variable. It states the kind of variable in the runtime of the program. Python also take cares of the memory management which is crucial in programming. So, Python is a dynamically typed
+                language.
+                <li>Robust</li>
+                Python has very strict rules which every program must compulsorily follow and if these rules are violated then Python terminates the code by generating “Exception”
+                <li>Supports multiple programming paradigms</li>
+                It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented, and functional programming. Python is often described as a "batteries included" language due to its comprehensive standard library. Python supports
+                both procedure-oriented and object-oriented programming which is one of the key python features.
+                <li>Compiled as well as interpreted</li>
+                In various books of python programming, it is mentioned that pythonlanguage is interpreted. But that is half correct the python program is first compiled and then interpreted. The compilation part is hidden from the programmer thus, many programmers believe
+                that it is an interpreted language. The compilation part is done first when we execute our code and this will generate byte code and internally this byte code gets converted by the python virtual machine(p.v.m) according to the underlying
+                platform(machine+operating system).
+                <li>Cross Platform</li>
+                Python is a cross-platform language: a Python program written on a Macintosh computer will run on a Linux system and vice versa. Python programs can run on Windows computer, as long as the Windows machine has the Python interpreter installed (most other
+                operating systems come with Python pre-installed).
+                <li>Extensible</li>
+                Python allows us to call C/C++/Java code from a Python code and thus we say it is an extensible language. We generally use this feature when we need a critical piece of code to run very fast . So we can code that part of our program in C or C++ and then
+                use it from our Python program
+                <li>Huge library</li>
+                The Python Standard Library is huge indeed. It can help you do various things like Database Programming , E-mailing ,GUI Programming etc
+            </ol>
+            <hr>
+            <h4>Python Download and Installation</h4>
+
+            <p>This document shows downloading and installing Python 3.8.3 on Windows 10 in Summer 2020. You should download and install the latest version of Python. The current latest (as of Summer 2020) is Python 3.8.3 <br>
+                <strong>Python: Version 3.8.3</strong> <br> The Python download requires about 25 Mb of disk space. When installed, Python requires about an additional 90 Mb of disk space.
+            </p>
+            <h4>Downloading</h4>
+            <ol>
+                <li>We can download Python from
+                    <a href="https://www.python.org/downloads"> Python website</a>
+                </li>
+                <li>The website should automatically detect that we are using Windows, Linux/UNIX, Mac OS X or Other. Then Click on Download Python 3.8.3</li>
+                <li>The file named python-3.8.3.exe should start downloading into your standard download folder. This file is about 25 Mb so it might take a while to download fully if you are on a slow internet connection</li>
+            </ol>
+            <h4>Installing</h4>
+            <ol>
+                <li>Open the downloads folder and run the file python-3.8.3.exe by right clicking it and selecting run as administrator.</li>
+                <li>A Python 3.8.3 Setup pop-up window will appear.</li>
+                <li>Ensure that Add Python 3.8.3 to PATH checkboxes at the bottom are checked.</li>
+                <li>If the Python Installer finds an earlier version of Python installed on your computer, the Install Now message may instead appear as Upgrade Now (and the checkboxes will not appear).</li>
+                <li>A new Python 3.8.3 Setup pop-up window will appear with a setup progress message and a progress bar.</li>
+                <li>Once the installation is over you will get a SETUP WAS SUCCESSFUL message.</li>
+                <li>Click the Close button.</li>
+                <li>Python should now be installed.</li>
+            </ol>
+            <h4>Verifying</h4>
+            <ol>
+                <li>Open Command Prompt</li>
+                <li>Type the command python –version</li>
+                <li>In the output we should see the python version number as Python 3.8.3</li>
+            </ol>
+            <h4>IDE</h4>
+            <p>An integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. PyCharm is one of the most widely used IDEs for Python programming language. PyCharm
+                is a cross-platform IDE that provides consistent experience on the Windows, macOS, and Linux operating systems. PyCharm is available in three editions: Professional, Community, and Edu. The Community and Edu editions are open-source projects
+                and they are free, but they have less features. PyCharm Edu provides courses and helps you learn programming with Python. The Professional edition is commercial, and provides an outstanding set of tools and features.</p>
+            <h4>Installing Pycharm</h4>
+            <ol>
+                <li>To download Pycharm visit
+                    <a href="https://www.jetbrains.com/pycharm/download">Jetbrains website</a>
+                </li>
+                <li>Here you will observe two versions of package for Windows/Mac/Linux</li>
+                <li>Click the " DOWNLOAD " link under the Community Section.</li>
+                <li>Once the download is complete, run the exe for install PyCharm. The setup wizard should have started. Click “Next”.</li>
+                <li>Then mention your destination folder. Click “Next”.</li>
+                <li>On the next screen, you can create a desktop shortcut if you want and click on “Next”</li>
+                <li>Click on “Install”</li>
+                <li>Once installation finished, you should receive a message screen that PyCharm is installed. </li>
+            </ol> 
+
+
+
+
+
+
+
+
         </div>
         <div class="but text-right">
             <button class="btn btn-primary pull-right"><a href="1-3.html">Next Topic&nbsp;<i
